@@ -76,8 +76,8 @@ int main()
 			end_task(times,tasks);
 			begin_task(times, tasks, command);
 		}
-		else if (command == "end") end_task(times, tasks);
-		else if (command == "status") status(times, tasks);
+		else if (command == "End" || command == "end") end_task(times, tasks);
+		else if (command == "Status" || command == "status") status(times, tasks);
 		else if (command != "Exit" && command != "exit")
 			std::cerr << "Error! Incorrect input command. Try again. " << std::endl;
 	}
